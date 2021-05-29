@@ -1,0 +1,12 @@
+{
+  "clangd.semanticHighlighting": true,
+  "clangd.arguments": ["--background-index","-pretty","--clang-tidy"],
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "disableWorkspaceFolders": true,
+      "filetypes": ["go"]
+    }
+  }
+}
