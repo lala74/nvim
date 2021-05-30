@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'jackguo380/vim-lsp-cxx-highlight'
+    "Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'fatih/vim-go'
     Plug 'vim-airline/vim-airline'
     Plug 'voldikss/vim-floaterm'
@@ -56,11 +57,11 @@ source $HOME/.config/nvim/plug-config/vim-go.vim
 map <silent> <C-n> :NERDTreeFocus<CR>
 
 "set termguicolors
-"colorscheme gruvbox
 set t_Co=256   " This is may or may not needed.
 
-set background=dark
-colorscheme PaperColor
+"set background=dark
+"colorscheme PaperColor
+colorscheme gruvbox
 
 set linebreak
 if has("autocmd")
@@ -80,4 +81,11 @@ let g:vimwiki_markdown_link_ext = 1
 
 let g:taskwiki_markup_syntax = 'markdown'
 let g:markdown_folding = 1
+
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 0
+let g:cpp_class_decl_highlight = 1
+let g:cpp_posix_standard = 1
+let g:cpp_experimental_template_highlight = 1
+let g:cpp_concepts_highlight = 1
 

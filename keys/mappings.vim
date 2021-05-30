@@ -12,7 +12,7 @@ nnoremap <M-l> :vertical resize +2<cr>
 inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<ESC>
 
-" TAB in general mode will move to text buffer
+" TAB in general mode will move to next buffer (window) 
 nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
@@ -46,3 +46,5 @@ nnoremap <silent> <C-g> :GFiles<CR>
 " Grep
 nnoremap <silent> <C-f> :Rg<CR>  
 
+" Float Terminal
+nnoremap <C-t> :FloatermNew<CR> 
