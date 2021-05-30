@@ -48,3 +48,7 @@ nnoremap <silent> <C-f> :Rg<CR>
 
 " Float Terminal
 nnoremap <C-t> :FloatermNew<CR> 
+
+" Copy and paste to outside buffer
+vnoremap <C-c> "+y
+map <C-v> "+P

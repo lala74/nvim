@@ -59,7 +59,6 @@ map <silent> <C-n> :NERDTreeFocus<CR>
 "set termguicolors
 set t_Co=256   " This is may or may not needed.
 
-"set background=dark
 "colorscheme PaperColor
 colorscheme gruvbox
 
