@@ -35,6 +35,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'tbabej/taskwiki'
     Plug 'plasticboy/vim-markdown'
 
+    " Tag
+    Plug 'preservim/tagbar'
     " Telescope
     " Plug 'BurntSushi/ripgrep'
 
@@ -54,8 +56,6 @@ source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/vim-go.vim
 "source $HOME/.config/nvim/plug-config/which-key.vim
 
-map <silent> <C-n> :NERDTreeFocus<CR>
-
 "set termguicolors
 set t_Co=256   " This is may or may not needed.
 
@@ -69,6 +69,7 @@ endif
 
 " enable line numbers
 let NERDTreeShowLineNumbers=1
+let mapleader = ','
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
 

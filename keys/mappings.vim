@@ -39,6 +39,8 @@ nnoremap <C-l> <C-w>l
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^D
 
+nmap <CR> o<Esc>
+
 " Fzf
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <C-g> :GFiles<CR>
@@ -52,3 +54,10 @@ nnoremap <C-t> :FloatermNew<CR>
 " Copy and paste to outside buffer
 vnoremap <C-c> "+y
 map <C-v> "+P
+
+" NerdTree
+map <C-n> :NERDTreeToggle<CR>
+map <leader>r :NERDTreeFind<cr>
+
+" TagBar
+nmap <F8> :TagbarToggle<CR>
