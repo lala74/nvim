@@ -9,8 +9,8 @@ nnoremap <M-h> :vertical resize -2<CR>
 nnoremap <M-l> :vertical resize +2<cr> 
 
 " easy CAPS
-inoremap <S-u> <ESC>viwUi
-nnoremap <S-u> viwU<ESC>
+" inoremap <S-u> <ESC>viwUi
+" nnoremap <S-u> viwU<ESC>
 
 " TAB in general mode will move to next buffer (window) 
 nnoremap <TAB> :bnext<CR>
