@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'vimwiki/vimwiki'
     Plug 'tbabej/taskwiki'
     Plug 'plasticboy/vim-markdown'
+    Plug 'jiangmiao/auto-pairs' 
 
     " Tag
     Plug 'preservim/tagbar'
@@ -50,11 +51,11 @@ call plug#begin('~/.config/nvim/plugged')
 call plug#end()
 
 source $HOME/.config/nvim/general/settings.vim
-source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/vim-go.vim
 "source $HOME/.config/nvim/plug-config/which-key.vim
+source $HOME/.config/nvim/keys/mappings.vim
 
 "set termguicolors
 set t_Co=256   " This is may or may not needed.
