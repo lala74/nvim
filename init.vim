@@ -31,10 +31,11 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'antoinemadec/coc-fzf'
 
     " Productivity improvement
-    Plug 'vimwiki/vimwiki'
-    Plug 'tbabej/taskwiki'
-    Plug 'plasticboy/vim-markdown'
+    " Plug 'vimwiki/vimwiki'
+    " Plug 'tbabej/taskwiki'
+    " Plug 'plasticboy/vim-markdown'
     Plug 'jiangmiao/auto-pairs' 
+    Plug 'preservim/nerdcommenter'
 
     " Tag
     Plug 'preservim/tagbar'
@@ -48,16 +49,18 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Color scheme
     Plug 'NLKNguyen/papercolor-theme'
+    " Plug 'iamcco/markdown-preview.nvim'
+    Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/plug-config/protobuf.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/vim-go.vim
 "source $HOME/.config/nvim/plug-config/which-key.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
-"set termguicolors
 set t_Co=256   " This is may or may not needed.
 
 "colorscheme PaperColor
@@ -70,18 +73,17 @@ endif
 
 " enable line numbers
 let NERDTreeShowLineNumbers=1
-let mapleader = ','
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
 
-let g:vimwiki_list = [{'path':'/tmp/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
-let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+" let g:vimwiki_list = [{'path':'/tmp/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
+" let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
 
 " Makes vimwiki markdown links as [text](text.md) instead of [text](text)
-let g:vimwiki_markdown_link_ext = 1
+" let g:vimwiki_markdown_link_ext = 1
 
-let g:taskwiki_markup_syntax = 'markdown'
-let g:markdown_folding = 1
+" let g:taskwiki_markup_syntax = 'markdown'
+" let g:markdown_folding = 1
 
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 0
@@ -90,3 +92,4 @@ let g:cpp_posix_standard = 1
 let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 
+let g:go_build_tags = "Developer"

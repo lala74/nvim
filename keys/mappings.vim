@@ -13,7 +13,7 @@ nnoremap <M-l> :vertical resize -2<cr>
 " nnoremap <S-u> viwU<ESC>
 
 " TAB in general mode will move to next buffer (window) 
-nnoremap <TAB> :bnext<CR>
+" nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
 
@@ -35,6 +35,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+"nnoremap <Leader>j <C-d>
+"nnoremap <Leader>k <C-u>
 
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^D
@@ -61,3 +64,13 @@ map <leader>r :NERDTreeFind<cr>
 
 " TagBar
 nmap <F8> :TagbarToggle<CR>
+
+" Search
+" Toggle search highlighting
+nnoremap <silent> <Leader>l :set hls!<CR>
+
+" Comment
+" Toggle comment
+nnoremap <silent> <C-\> :Commentary<CR>
+
+

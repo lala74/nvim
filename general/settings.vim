@@ -3,8 +3,9 @@ let g:mapleader = "\<Space>"
 
 syntax enable                       " Enable syntax highlighting
 set hidden                          " Required to keep multiple buffers open multiple buffers
-"set nowrap                          " Display long lines as just one line
+set nowrap                          " Display long lines as just one line
 set encoding=utf-8                  " The encoding displayed
+let mapleader = ','                 " Set the mapleader key
 set pumheight=10                    " Makes popup menu smaller
 set fileencoding=utf-8              " The encoding written to file
 set ruler                           " Show the cursor position all the time
@@ -42,3 +43,5 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 cmap w!! w !sudo tee %
 
 let g:fzf_layout = { 'down': '40%' }
+
+
