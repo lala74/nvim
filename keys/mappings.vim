@@ -60,7 +60,7 @@ map <C-v> "+P
 
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
-map <leader>r :NERDTreeFind<cr>
+map <leader>r :NERDTreeFind<CR>
 
 " TagBar
 nmap <F8> :TagbarToggle<CR>
@@ -71,6 +71,6 @@ nnoremap <silent> <Leader>l :set hls!<CR>
 
 " Comment
 " Toggle comment
-nnoremap <silent> <C-\> :Commentary<CR>
+map <silent> <C-\> :Commentary<CR>
 
 
