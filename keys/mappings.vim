@@ -1,7 +1,7 @@
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
-
+  
 " Use alt + hjkl to resize windows
 nnoremap <M-j> :resize +2<CR> 
 nnoremap <M-k> :resize -2<CR> 
@@ -20,7 +20,7 @@ nnoremap <S-TAB> :bprevious<CR>
 " Alternate way to save
 nnoremap <C-s> :w<CR>
 " Alternate way to quit
-nnoremap <C-q> :wq!<CR>
+" nnoremap <C-q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <ESC>
 " <TAB>: completion
@@ -73,4 +73,5 @@ nnoremap <silent> <Leader>l :set hls!<CR>
 " Toggle comment
 nnoremap <silent> <C-\> :Commentary<CR>
 
-
+nnoremap <Leader>hd :%!xxd<CR>
+nnoremap <Leader>dh :%!xxd -r<CR>
