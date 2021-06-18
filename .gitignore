@@ -3,3 +3,4 @@ plug.vim
 plugged/
 *.bk
 .netrwhist
+coc-settings.json
