@@ -21,6 +21,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'preservim/nerdtree'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'jackguo380/vim-lsp-cxx-highlight'
     "Plug 'octol/vim-cpp-enhanced-highlight'
@@ -40,7 +41,7 @@ call plug#begin('~/.config/nvim/plugged')
     " Tag
     Plug 'preservim/tagbar'
     " Telescope
-    " Plug 'BurntSushi/ripgrep'
+    Plug 'BurntSushi/ripgrep'
 
     " Plug 'nvim-lua/popup.nvim'
     " Plug 'nvim-lua/plenary.nvim'
@@ -56,25 +57,18 @@ call plug#end()
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/plug-config/protobuf.vim
 source $HOME/.config/nvim/plug-config/coc.vim
-source $HOME/.config/nvim/plug-config/signify.vim
-source $HOME/.config/nvim/plug-config/vim-go.vim
 "source $HOME/.config/nvim/plug-config/which-key.vim
+source $HOME/.config/nvim/plug-config/plug-config.vim
+source $HOME/.config/nvim/plug-config/custom.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
 set t_Co=256   " This is may or may not needed.
-
 "colorscheme PaperColor
 colorscheme gruvbox
 
-set linebreak
 if has("autocmd")
   filetype plugin indent on
 endif
-
-" enable line numbers
-let NERDTreeShowLineNumbers=1
-" make sure relative line numbers are used
-autocmd FileType nerdtree setlocal relativenumber
 
 " let g:vimwiki_list = [{'path':'/tmp/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
 " let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
@@ -85,11 +79,5 @@ autocmd FileType nerdtree setlocal relativenumber
 " let g:taskwiki_markup_syntax = 'markdown'
 " let g:markdown_folding = 1
 
-let g:cpp_class_scope_highlight = 1
-let g:cpp_member_variable_highlight = 0
-let g:cpp_class_decl_highlight = 1
-let g:cpp_posix_standard = 1
-let g:cpp_experimental_template_highlight = 1
-let g:cpp_concepts_highlight = 1
 
-let g:go_build_tags = "Developer"
+

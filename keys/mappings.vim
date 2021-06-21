@@ -1,6 +1,19 @@
-" Better nav for omnicomplete
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" divers
+" toggle hexdump
+nnoremap <Leader>hd :%!xxd<CR>
+nnoremap <Leader>dh :%!xxd -r<CR>
+
+" copy and paste to outside buffer
+vnoremap <C-c> "+y
+map <C-v> "+P
+
+" toggle search highlighting
+nnoremap <silent> <Leader>l :set hls!<CR>
+
+" better nav for omnicomplete
+" inoremap <expr> <c-j> ("\<C-n>")
+" inoremap <expr> <c-k> ("\<C-p>")
   
 " Use alt + hjkl to resize windows
 nnoremap <M-j> :resize +2<CR> 
@@ -19,10 +32,10 @@ nnoremap <S-TAB> :bprevious<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
-" Alternate way to quit
-" nnoremap <C-q> :wq!<CR>
+
 " Use control-c instead of escape
 nnoremap <C-c> <ESC>
+
 " <TAB>: completion
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
@@ -36,42 +49,50 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-"nnoremap <Leader>j <C-d>
-"nnoremap <Leader>k <C-u>
-
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^D
+" nnoremap <Leader>o o<Esc>^Da
+" nnoremap <Leader>O O<Esc>^D
 
 nmap <CR> o<Esc>
 
-" Fzf
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" fzf
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <C-g> :GFiles<CR>
 
-" Grep
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ripgrep
 nnoremap <silent> <C-f> :Rg<CR>  
 
-" Float Terminal
-nnoremap <C-t> :FloatermNew<CR> 
 
-" Copy and paste to outside buffer
-vnoremap <C-c> "+y
-map <C-v> "+P
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
 map <leader>r :NERDTreeFind<CR>
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " TagBar
 nmap <F8> :TagbarToggle<CR>
 
-" Search
-" Toggle search highlighting
-nnoremap <silent> <Leader>l :set hls!<CR>
 
-" Comment
-" Toggle comment
-map <silent> <C-\> :Commentary<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" commentary
+" toggle comment
+nnoremap <silent> <C-\> :Commentary<CR>
+vnoremap <silent> <C-\> :Commentary<CR>
 
-nnoremap <Leader>hd :%!xxd<CR>
-nnoremap <Leader>dh :%!xxd -r<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" floaterm 
+nnoremap <C-t> :FloatermNew<CR> 
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" signify
+" Jump through hunks
+nmap <leader>gj <plug>(signify-next-hunk)
+nmap <leader>gk <plug>(signify-prev-hunk)
+nmap <leader>gJ 99999<leader>gJ
+nmap <leader>gK 99999<leader>gK
+
