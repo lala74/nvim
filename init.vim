@@ -2,9 +2,6 @@ set nocompatible        " be iMproved, required
 filetype off            " required
 
 call plug#begin('~/.config/nvim/plugged')
-    " Beauty
-    Plug 'morhetz/gruvbox'
-
     " Git integrations
     Plug 'tpope/vim-fugitive'
     Plug 'mhinz/vim-signify' 
@@ -21,15 +18,17 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'preservim/nerdtree'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'antoinemadec/coc-fzf'
+    Plug 'BurntSushi/ripgrep'
 
+    " Coding
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'jackguo380/vim-lsp-cxx-highlight'
-    "Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'fatih/vim-go'
+    Plug 'rhysd/vim-clang-format'
+
     Plug 'vim-airline/vim-airline'
     Plug 'voldikss/vim-floaterm'
-    Plug 'rhysd/vim-clang-format'
-    Plug 'antoinemadec/coc-fzf'
 
     " Productivity improvement
     " Plug 'vimwiki/vimwiki'
@@ -40,8 +39,6 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Tag
     Plug 'preservim/tagbar'
-    " Telescope
-    Plug 'BurntSushi/ripgrep'
 
     " Plug 'nvim-lua/popup.nvim'
     " Plug 'nvim-lua/plenary.nvim'
@@ -50,15 +47,16 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Color scheme
     Plug 'NLKNguyen/papercolor-theme'
-    " Plug 'iamcco/markdown-preview.nvim'
+    Plug 'morhetz/gruvbox'
     Plug 'sheerun/vim-polyglot'
 call plug#end()
 
-source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/plug-config/protobuf.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 "source $HOME/.config/nvim/plug-config/which-key.vim
 source $HOME/.config/nvim/plug-config/plug-config.vim
+
+source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/plug-config/custom.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
