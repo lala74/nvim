@@ -26,7 +26,7 @@ nnoremap <M-l> :vertical resize -2<cr>
 " nnoremap <S-u> viwU<ESC>
 
 " TAB in general mode will move to next buffer (window) 
-nnoremap <TAB> :bnext<CR>
+nnoremap <Leader><TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
 
