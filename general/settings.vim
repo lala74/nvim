@@ -5,7 +5,6 @@ syntax enable                       " Enable syntax highlighting
 set hidden                          " Required to keep multiple buffers open multiple buffers
 set nowrap                          " Display long lines as just one line
 set encoding=utf-8                  " The encoding displayed
-let mapleader = ','                 " Set the mapleader key
 set pumheight=10                    " Makes popup menu smaller
 set fileencoding=utf-8              " The encoding written to file
 set ruler                           " Show the cursor position all the time
@@ -37,12 +36,11 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set relativenumber
 set ic
 set linebreak
+let mapleader = ','                 " Set the mapleader key
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me
 cmap w!! w !sudo tee %
-
-let g:fzf_layout = { 'down': '40%' }
 
 
