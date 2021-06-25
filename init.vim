@@ -23,9 +23,13 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Coding
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'jackguo380/vim-lsp-cxx-highlight'
     Plug 'fatih/vim-go'
+
+    " C/C++
     Plug 'rhysd/vim-clang-format'
+    Plug 'jackguo380/vim-lsp-cxx-highlight'
+    Plug 'octol/vim-cpp-enhanced-highlight'
+    " Plug 'bfrg/vim-cpp-modern'
 
     Plug 'vim-airline/vim-airline'
     Plug 'voldikss/vim-floaterm'
