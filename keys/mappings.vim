@@ -68,7 +68,7 @@ nnoremap <silent> <C-f> :Rg<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NerdTree
 map <C-n> :NERDTreeToggle<CR>
-map <leader>r :NERDTreeFind<CR>
+map <leader>f :NERDTreeFind<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

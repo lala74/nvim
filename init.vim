@@ -55,12 +55,13 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'sheerun/vim-polyglot'
 call plug#end()
 
+source $HOME/.config/nvim/general/settings.vim
+
 source $HOME/.config/nvim/plug-config/protobuf.vim
 source $HOME/.config/nvim/plug-config/coc.vim
-"source $HOME/.config/nvim/plug-config/which-key.vim
 source $HOME/.config/nvim/plug-config/plug-config.vim
+"source $HOME/.config/nvim/plug-config/which-key.vim
 
-source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/plug-config/custom.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
