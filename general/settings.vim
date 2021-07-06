@@ -1,5 +1,5 @@
 " set leader key
-let g:mapleader = "\<Space>"
+let g:mapleader = ","
 
 syntax enable                       " Enable syntax highlighting
 set hidden                          " Required to keep multiple buffers open multiple buffers
@@ -34,9 +34,11 @@ set formatoptions=cro                   " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 "set autochdir                           " Your working directory will always be the same as your working directory
 set relativenumber
-set ic
 set linebreak
-let mapleader = ','                 " Set the mapleader key
+
+set ignorecase                          " We need to set this in order to smartcase to work
+set smartcase                           " Seach will be case sensitive if there is at least one UPPER character
+
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
