@@ -16,10 +16,16 @@ nnoremap <silent> <Leader>l :set hls!<CR>
 " inoremap <expr> <c-k> ("\<C-p>")
   
 " Use alt + hjkl to resize windows
-nnoremap <M-j> :resize +2<CR> 
-nnoremap <M-k> :resize -2<CR> 
-nnoremap <M-h> :vertical resize +2<CR> 
-nnoremap <M-l> :vertical resize -2<cr> 
+nnoremap <Leader>h :resize +2<CR> 
+nnoremap <Leader>j :resize -2<CR> 
+nnoremap <Leader>k :vertical resize +2<CR> 
+nnoremap <Leader>l :vertical resize -2<cr> 
+
+" Better delete in insert mode
+" Delete forward
+inoremap <C-h> <C-o>h <C-o>x
+" Delete backward
+inoremap <C-l> <C-o>x
 
 " easy CAPS
 " inoremap <S-u> <ESC>viwUi
