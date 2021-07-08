@@ -14,6 +14,7 @@ call plug#begin('~/.config/nvim/plugged')
     " Which key
     "Plug 'liuchengxu/vim-which-key'
 
+
     " Search thing
     Plug 'preservim/nerdtree'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
