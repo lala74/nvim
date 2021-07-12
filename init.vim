@@ -20,7 +20,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'BurntSushi/ripgrep'
 
     " Coding
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'neoclide/coc.nvim', {'tag': 'v0.0.80'}
     Plug 'fatih/vim-go'
 
     " C/C++
