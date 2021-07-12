@@ -16,10 +16,10 @@ nnoremap <silent> <Leader>l :set hls!<CR>
 " inoremap <expr> <c-k> ("\<C-p>")
   
 " Use alt + hjkl to resize windows
-nnoremap <Leader>h :resize +2<CR> 
-nnoremap <Leader>j :resize -2<CR> 
-nnoremap <Leader>k :vertical resize +2<CR> 
-nnoremap <Leader>l :vertical resize -2<cr> 
+" nnoremap <Leader>h :resize +2<CR> 
+" nnoremap <Leader>j :resize -2<CR> 
+" nnoremap <Leader>k :vertical resize +2<CR> 
+" nnoremap <Leader>l :vertical resize -2<cr> 
 
 " Better delete in insert mode
 " Delete forward
@@ -78,15 +78,14 @@ map <leader>f :NERDTreeFind<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" TagBar
-nmap <F8> :TagbarToggle<CR>
+" Nerd Commenter
+" toggle comment
+map <C-\> <plug>NERDCommenterToggle h
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" commentary
-" toggle comment
-nnoremap <silent> <C-\> :Commentary<CR>
-vnoremap <silent> <C-\> :Commentary<CR>
+" TagBar
+nmap <F8> :TagbarToggle<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

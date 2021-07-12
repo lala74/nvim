@@ -8,9 +8,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
    
-    " Commentary
-    Plug 'tpope/vim-commentary'
-
     " Which key
     "Plug 'liuchengxu/vim-which-key'
 
@@ -32,15 +29,10 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'octol/vim-cpp-enhanced-highlight'
     " Plug 'bfrg/vim-cpp-modern'
 
-    Plug 'vim-airline/vim-airline'
-    Plug 'voldikss/vim-floaterm'
-
     " Productivity improvement
     " Plug 'vimwiki/vimwiki'
     " Plug 'tbabej/taskwiki'
     " Plug 'plasticboy/vim-markdown'
-    Plug 'jiangmiao/auto-pairs' 
-    Plug 'preservim/nerdcommenter'
 
     " Tag
     Plug 'preservim/tagbar'
@@ -54,6 +46,13 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'NLKNguyen/papercolor-theme'
     Plug 'morhetz/gruvbox'
     Plug 'sheerun/vim-polyglot'
+    
+    " Vim
+    Plug 'terryma/vim-multiple-cursors'
+    Plug 'vim-airline/vim-airline'
+    Plug 'voldikss/vim-floaterm'
+    Plug 'jiangmiao/auto-pairs' 
+    Plug 'preservim/nerdcommenter'
 call plug#end()
 
 source $HOME/.config/nvim/general/settings.vim
