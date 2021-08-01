@@ -65,8 +65,8 @@ let $FZF_DEFAULT_OPTS='--reverse'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Divers
 " cpp
-let g:cpp_class_scope_highlight = 1                     " Highlight class scope
-let g:cpp_member_variable_highlight = 1                 " Highlight member variable of class
+let g:cpp_class_scope_highlight = 0                     " Highlight class scope
+let g:cpp_member_variable_highlight = 0                 " Highlight member variable of class
 let g:cpp_class_decl_highlight = 1                      " Highlight class name declarations
 let g:cpp_posix_standard = 1                            " Highlight POSIX functions
 let g:cpp_experimental_template_highlight = 1           " Hihglight template function (fast, have some error)

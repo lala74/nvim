@@ -37,6 +37,8 @@ call plug#begin('~/.config/nvim/plugged')
     " Tag
     Plug 'preservim/tagbar'
 
+    " Code indentation guideline
+    Plug 'Yggdroot/indentLine'
     " Plug 'nvim-lua/popup.nvim'
     " Plug 'nvim-lua/plenary.nvim'
     " Plug 'nvim-telescope/telescope.nvim'
@@ -72,6 +74,8 @@ colorscheme gruvbox
 if has("autocmd")
   filetype plugin indent on
 endif
+
+syntax on
 
 " let g:vimwiki_list = [{'path':'/tmp/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
 " let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
