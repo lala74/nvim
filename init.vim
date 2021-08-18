@@ -55,6 +55,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'voldikss/vim-floaterm'
     Plug 'jiangmiao/auto-pairs' 
     Plug 'preservim/nerdcommenter'
+
+    Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 source $HOME/.config/nvim/general/settings.vim
@@ -70,6 +72,8 @@ source $HOME/.config/nvim/keys/mappings.vim
 set t_Co=256   " This is may or may not needed.
 "colorscheme PaperColor
 colorscheme gruvbox
+
+set guifont=DroidSansMono_Nerd_Font:h11
 
 if has("autocmd")
   filetype plugin indent on
