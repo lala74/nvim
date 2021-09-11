@@ -5,7 +5,7 @@
 1. Clone this repo
 
 ```Bash
-git clone https://github.com/lala74/nvim $HOME/.config/
+git clone https://github.com/lala74/nvim $HOME/.config/nvim
 ```
 
 2. Install vim-plug: https://github.com/junegunn/vim-plug
