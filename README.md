@@ -16,6 +16,7 @@ git clone https://github.com/lala74/nvim $HOME/.config/nvim
 # In your terminal
 nvim
 # In nvim window
+# PLZ ignore all the error message, it's because you didn't install all plugins yet !!!!
 :PlugInstall
 ```
 
