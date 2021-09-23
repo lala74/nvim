@@ -59,7 +59,23 @@ let g:NERDCommentEmptyLines = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " fzf
 let g:fzf_layout = { 'window': { 'width':0.8, 'height':0.8} }
+let $FZF_DEFAULT_COMMANDS="rg --file"
 let $FZF_DEFAULT_OPTS="--reverse --ansi --preview 'bat --style=numbers --theme='gruvbox-dark' --color=always --style=header,grid --line-range :300 {}'"
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-fugitive
+" Pick the right column in git merge if conflic
+nmap <leader>gj :diffget //3<CR>
+" Pick the left column in git merge if conflic
+nmap <leader>gf :diffget //2<CR>
+" Revert a line in diff mode
+nmap <leader>gu :diffget
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-fugitive
+let g:NERDTreeGitStatusPorcelainVersion = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

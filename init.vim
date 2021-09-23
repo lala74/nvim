@@ -7,7 +7,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'mhinz/vim-signify' 
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
-   
+    Plug 'Xuyuanp/nerdtree-git-plugin'          " Git status for nerdtree
+
     " Which key
     "Plug 'liuchengxu/vim-which-key'
 
@@ -89,6 +90,4 @@ syntax on
 
 " let g:taskwiki_markup_syntax = 'markdown'
 " let g:markdown_folding = 1
-
-
 
