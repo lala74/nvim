@@ -57,7 +57,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'jiangmiao/auto-pairs' 
     Plug 'preservim/nerdcommenter'
 
-    Plug 'ryanoasis/vim-devicons'
+    " Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 source $HOME/.config/nvim/general/settings.vim

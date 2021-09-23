@@ -76,7 +76,7 @@ nmap <leader>gu :diffget
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-fugitive
 let g:NERDTreeGitStatusPorcelainVersion = 1
-
+let g:NERDTreeGitStatusConcealBrackets = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Divers
