@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'neoclide/coc.nvim', {'tag': 'v0.0.80'}
     Plug 'fatih/vim-go'
     Plug 'tibabit/vim-templates'  " Template file
+    Plug 'kergoth/vim-bitbake'
 
     " C/C++
     Plug 'rhysd/vim-clang-format'
