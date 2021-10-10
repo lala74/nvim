@@ -82,6 +82,7 @@ let g:NERDTreeGitStatusConcealBrackets = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-templates
 let g:tmpl_author_name = "La Minh Duc"
+let g:tmpl_company = "Axon Entreprise"
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
