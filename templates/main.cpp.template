@@ -1,0 +1,18 @@
+//
+// Copyright (c) {{YEAR}} Axon Enterprise
+//
+/**
+ * @author      : {{NAME}}
+ * @file        : {{FILE}}.cpp
+ * @created     : {{TIMESTAMP}}
+ */
+{{CURSOR}}
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello" << endl;
+    return 0;
+}

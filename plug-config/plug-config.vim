@@ -74,9 +74,15 @@ nmap <leader>gu :diffget
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-fugitive
+" nerdtree-git-plugin
 let g:NERDTreeGitStatusPorcelainVersion = 1
 let g:NERDTreeGitStatusConcealBrackets = 1
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-templates
+let g:tmpl_author_name = "La Minh Duc"
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Divers

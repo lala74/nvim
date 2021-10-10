@@ -1,0 +1,21 @@
+//
+// Copyright (c) {{YEAR}} Axon Enterprise
+//
+/**
+ * @author      : {{NAME}}
+ * @file        : {{FILE}}.hpp
+ * @created     : {{TIMESTAMP}}
+ */
+{{CURSOR}}
+#ifndef {{MACRO_GUARD}}
+#define {{MACRO_GUARD}}
+
+class {{CLASS}}
+{
+    public:
+        {{CLASS}}();
+        ~{{CLASS}}();
+    private:
+};
+
+#endif /* {{MACRO_GUARD}} */

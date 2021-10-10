@@ -17,4 +17,6 @@
       ]
     }
   },
+  "python.jediEnabled": false,
+  "yaml.format.enable": true,
 }

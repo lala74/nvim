@@ -1,0 +1,19 @@
+//
+// Copyright (c) {{YEAR}} Axon Enterprise
+//
+/**
+ * @author      : {{NAME}}
+ * @file        : {{FILE}}.cpp
+ * @created     : {{TIMESTAMP}}
+ */
+{{CURSOR}}
+#include "{{FILE}}.h"
+
+{{CLASS}}::{{CLASS}}()
+{
+}
+
+{{CLASS}}::~{{CLASS}}()
+{
+}
+
