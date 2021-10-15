@@ -86,6 +86,11 @@ let g:tmpl_company = "Axon Entreprise"
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-workspace
+" let g:workspace_autocreate = 1
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Divers
 " cpp
 let g:cpp_class_scope_highlight = 0                     " Highlight class scope

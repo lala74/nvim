@@ -33,6 +33,7 @@ call plug#begin('~/.config/nvim/plugged')
     " Plug 'bfrg/vim-cpp-modern'
 
     " Productivity improvement
+    Plug 'thaerkh/vim-workspace'
     " Plug 'vimwiki/vimwiki'
     " Plug 'tbabej/taskwiki'
     " Plug 'plasticboy/vim-markdown'
