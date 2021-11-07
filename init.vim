@@ -59,6 +59,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'voldikss/vim-floaterm'
     Plug 'jiangmiao/auto-pairs' 
     Plug 'preservim/nerdcommenter'
+    Plug 'MattesGroeger/vim-bookmarks'
 
     " Plug 'ryanoasis/vim-devicons'
 call plug#end()

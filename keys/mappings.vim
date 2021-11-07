@@ -72,6 +72,33 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
 
+
+" SEARCH FOR VISUAL SELECTED TEXT
+" Press * to search forwards for selected text, or # to search backwards.
+" As normal, press n for next search, or N for previous.
+" Handles multiline selection and search.
+" Whitespace in the selection matches any whitespace when searching (searching for "hello world" will also find "hello" at the end of a line, with "world" at the start of the next line).
+" Each search is placed in the search history allowing you to easily repeat previous searches.
+" No registers are changed.
+vnoremap <silent> * :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy/<C-R>=&ic?'\c':'\C'<CR><C-R><C-R>=substitute(
+  \escape(@", '/\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gVzv:call setreg('"', old_reg, old_regtype)<CR>
+vnoremap <silent> # :<C-U>
+  \let old_reg=getreg('"')<Bar>let old_regtype=getregtype('"')<CR>
+  \gvy?<C-R>=&ic?'\c':'\C'<CR><C-R><C-R>=substitute(
+  \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
+  \gVzv:call setreg('"', old_reg, old_regtype)<CR>
+
+
+
+" For QuickFix window
+" Enter to open item
+augroup QuickFix
+     au FileType qf map <buffer> <CR> :.cc <CR> zz <C-w>j
+augroup END
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " fzf
 nnoremap <silent> <C-p> :Files<CR>

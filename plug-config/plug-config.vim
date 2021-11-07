@@ -91,6 +91,15 @@ let g:tmpl_company = "Axon Entreprise"
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-airline
+let g:airline#extensions#tagbar#flags = 'f'  " show full tag hierarchy
+"" Enable the list of buffers
+" let g:airline#extensions#tabline#enabled = 1
+
+" Show just the filename
+" let g:airline#extensions#tabline#fnamemod = ':t'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Divers
 " cpp
 let g:cpp_class_scope_highlight = 0                     " Highlight class scope
