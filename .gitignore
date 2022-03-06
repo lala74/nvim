@@ -4,3 +4,4 @@ plugged/
 *.bk
 .netrwhist
 # coc-settings.json
+.undodir/

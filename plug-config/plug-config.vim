@@ -83,6 +83,7 @@ let g:NERDTreeGitStatusConcealBrackets = 1
 " vim-templates
 let g:tmpl_author_name = "La Minh Duc"
 let g:tmpl_company = "Axon Entreprise"
+let g:tmpl_search_paths = ['~/.config/nvim/templates']
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -100,6 +101,12 @@ let g:airline#extensions#tagbar#flags = 'f'  " show full tag hierarchy
 " let g:airline#extensions#tabline#fnamemod = ':t'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-bookmarks
+let g:bookmark_save_per_working_dir = 1
+let g:bookmark_auto_save = 1
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Divers
 " cpp
 let g:cpp_class_scope_highlight = 0                     " Highlight class scope
@@ -109,6 +116,4 @@ let g:cpp_posix_standard = 1                            " Highlight POSIX functi
 let g:cpp_experimental_template_highlight = 1           " Hihglight template function (fast, have some error)
 " let g:cpp_experimental_simple_template_highlight = 1    " Hihglight template function (slow in large file, work well)
 let g:cpp_concepts_highlight = 1
-
-
 

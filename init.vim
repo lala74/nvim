@@ -21,7 +21,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'BurntSushi/ripgrep'
 
     " Coding
-    Plug 'neoclide/coc.nvim', {'tag': 'v0.0.80'}
+    Plug 'neoclide/coc.nvim'
     Plug 'fatih/vim-go'
     Plug 'tibabit/vim-templates'  " Template file
     Plug 'kergoth/vim-bitbake'
