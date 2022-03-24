@@ -21,6 +21,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'BurntSushi/ripgrep'
 
     " Coding
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'nvim-treesitter/playground'  " Display capture group using :TSHighlightCaptureUnderCursor
     Plug 'neoclide/coc.nvim'
     Plug 'fatih/vim-go'
     Plug 'tibabit/vim-templates'  " Template file
@@ -28,15 +30,16 @@ call plug#begin('~/.config/nvim/plugged')
 
     " C/C++
     Plug 'rhysd/vim-clang-format'
-    Plug 'jackguo380/vim-lsp-cxx-highlight'
-    Plug 'octol/vim-cpp-enhanced-highlight'
+    " Plug 'jackguo380/vim-lsp-cxx-highlight'
+    " Plug 'octol/vim-cpp-enhanced-highlight'
     " Plug 'bfrg/vim-cpp-modern'
-
+ 
     " Productivity improvement
     Plug 'thaerkh/vim-workspace'
     " Plug 'vimwiki/vimwiki'
     " Plug 'tbabej/taskwiki'
     " Plug 'plasticboy/vim-markdown'
+    Plug 'ojroques/vim-oscyank'  " Copy to terminal
 
     " Tag
     Plug 'preservim/tagbar'
@@ -61,7 +64,10 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'MattesGroeger/vim-bookmarks'
 
+
     " Plug 'ryanoasis/vim-devicons'
+    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'folke/trouble.nvim'
 call plug#end()
 
 source $HOME/.config/nvim/general/settings.vim
@@ -94,4 +100,41 @@ syntax on
 
 " let g:taskwiki_markup_syntax = 'markdown'
 " let g:markdown_folding = 1
+
+lua << EOF
+  require("trouble").setup {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
+  require'nvim-treesitter.configs'.setup {
+      -- One of "all", "maintained" (parsers with maintainers), or a list of languages
+      ensure_installed = "maintained",
+
+      -- Install languages synchronously (only applied to `ensure_installed`)
+      sync_install = false,
+
+      -- List of parsers to ignore installing
+      ignore_install = { "javascript" },
+
+      highlight = {
+        -- `false` will disable the whole extension
+        enable = true,
+
+        -- list of language that will be disabled
+        disable = { "rust", "go" , "cmake"},
+
+        -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+        -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+        -- Using this option may slow down your editor, and you may see some duplicate highlights.
+        -- Instead of true it can also be a list of languages
+        additional_vim_regex_highlighting = false,
+        },
+   }
+   require"nvim-treesitter.highlight".set_custom_captures {
+        -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
+        -- ["field"] = "Identifier",
+        ["constructor"] = "TSFunction",
+   }
+EOF
 
