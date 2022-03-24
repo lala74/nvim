@@ -67,7 +67,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Plug 'ryanoasis/vim-devicons'
     Plug 'kyazdani42/nvim-web-devicons'
-    Plug 'zchee/deoplete-jedi'
+    Plug 'folke/trouble.nvim'
 call plug#end()
 
 source $HOME/.config/nvim/general/settings.vim
@@ -102,6 +102,11 @@ syntax on
 " let g:markdown_folding = 1
 
 lua << EOF
+  require("trouble").setup {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
   require'nvim-treesitter.configs'.setup {
       -- One of "all", "maintained" (parsers with maintainers), or a list of languages
       ensure_installed = "maintained",
@@ -132,3 +137,4 @@ lua << EOF
         ["constructor"] = "TSFunction",
    }
 EOF
+
