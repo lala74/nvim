@@ -23,7 +23,7 @@ call plug#begin('~/.config/nvim/plugged')
     " Coding
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'nvim-treesitter/playground'  " Display capture group using :TSHighlightCaptureUnderCursor
-    Plug 'neoclide/coc.nvim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'fatih/vim-go'
     Plug 'tibabit/vim-templates'  " Template file
     Plug 'kergoth/vim-bitbake'

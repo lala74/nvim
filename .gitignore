@@ -5,3 +5,5 @@ plugged/
 .netrwhist
 # coc-settings.json
 .undodir/
+node_modules/
+package.json
