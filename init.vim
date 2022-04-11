@@ -10,7 +10,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'Xuyuanp/nerdtree-git-plugin'          " Git status for nerdtree
 
     " Which key
-    "Plug 'liuchengxu/vim-which-key'
+    Plug 'liuchengxu/vim-which-key'
 
 
     " Search thing
@@ -68,6 +68,9 @@ call plug#begin('~/.config/nvim/plugged')
     " Plug 'ryanoasis/vim-devicons'
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'folke/trouble.nvim'
+
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 source $HOME/.config/nvim/general/settings.vim
@@ -109,7 +112,7 @@ lua << EOF
   }
   require'nvim-treesitter.configs'.setup {
       -- One of "all", "maintained" (parsers with maintainers), or a list of languages
-      ensure_installed = "maintained",
+      ensure_installed = "all",
 
       -- Install languages synchronously (only applied to `ensure_installed`)
       sync_install = false,
@@ -136,5 +139,19 @@ lua << EOF
         -- ["field"] = "Identifier",
         ["constructor"] = "TSFunction",
    }
+   require('telescope').setup{
+      defaults = {
+        mappings = {
+          i = {
+            ["<C-n>"] = false,
+            ["<C-p>"] = false,
+            ["<C-j>"] = require("telescope.actions").move_selection_next,
+            ["<C-k>"] = require("telescope.actions").move_selection_previous,
+          },
+          n = {
+          },
+        },
+      }
+    }
 EOF
 

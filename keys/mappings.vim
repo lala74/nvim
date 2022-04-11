@@ -96,18 +96,26 @@ vnoremap <silent> # :<C-U>
 " For QuickFix window
 " Enter to open item
 augroup QuickFix
-     au FileType qf map <buffer> <CR> :.cc <CR> zz <C-w>j
+     au FileType qf map <buffer> <CR> :.cc <CR> zz
 augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " fzf
-nnoremap <silent> <C-p> :Files<CR>
-nnoremap <silent> <C-g> :GFiles<CR>
+" nnoremap <silent> <C-p> :Files<CR>
+" nnoremap <silent> <C-g> :GFiles<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ripgrep
-nnoremap <silent> <C-f> :Rg<CR>  
+" nnoremap <silent> <C-f> :Rg<CR>
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" telescope
+nnoremap <silent> <C-f> :Telescope live_grep<CR>
+nnoremap <silent> <C-p> :Telescope find_files<CR>
+nnoremap <silent> <C-g> :Telescope git_status<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

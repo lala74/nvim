@@ -1,3 +1,3 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-go
-let g:go_build_tags = "Developer"
+let g:go_build_tags = "developer"
