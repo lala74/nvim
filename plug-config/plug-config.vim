@@ -118,3 +118,6 @@ let g:cpp_experimental_template_highlight = 1           " Hihglight template fun
 " let g:cpp_experimental_simple_template_highlight = 1    " Hihglight template function (slow in large file, work well)
 let g:cpp_concepts_highlight = 1
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" oscyank
+let g:oscyank_term = 'default'
