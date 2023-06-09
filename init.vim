@@ -134,11 +134,11 @@ lua << EOF
         additional_vim_regex_highlighting = false,
         },
    }
-   require"nvim-treesitter.highlight".set_custom_captures {
+   -- require"nvim-treesitter.highlight".set_custom_captures {
         -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
         -- ["field"] = "Identifier",
-        ["constructor"] = "TSFunction",
-   }
+   --     ["constructor"] = "TSFunction",
+   -- }
    require('telescope').setup{
       defaults = {
         mappings = {
