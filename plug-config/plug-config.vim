@@ -121,3 +121,7 @@ let g:cpp_concepts_highlight = 1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " oscyank
 let g:oscyank_term = 'default'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" rust
+let g:rustfmt_autosave = 1
