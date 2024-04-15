@@ -6,7 +6,7 @@ nnoremap <Leader>dh :%!xxd -r<CR>
 
 " copy and paste to outside buffer
 vnoremap <C-c> "+y
-vnoremap <C-c> :OSCYank<CR>
+vnoremap <C-c> :OSCYankVisual<CR>
 map <C-v> "+P
 
 " toggle search highlighting
