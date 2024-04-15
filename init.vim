@@ -55,7 +55,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'NLKNguyen/papercolor-theme'
     Plug 'morhetz/gruvbox'
     Plug 'sheerun/vim-polyglot'
-    
+
     " Vim
     " Plug 'terryma/vim-multiple-cursors'
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
