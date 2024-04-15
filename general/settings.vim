@@ -38,6 +38,7 @@ set linebreak
 
 set ignorecase                          " We need to set this in order to smartcase to work
 set smartcase                           " Seach will be case sensitive if there is at least one UPPER character
+set wrap
 
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC

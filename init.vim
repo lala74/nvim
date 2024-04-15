@@ -55,9 +55,10 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'NLKNguyen/papercolor-theme'
     Plug 'morhetz/gruvbox'
     Plug 'sheerun/vim-polyglot'
-    
+
     " Vim
     " Plug 'terryma/vim-multiple-cursors'
+    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
     Plug 'vim-airline/vim-airline'
     Plug 'voldikss/vim-floaterm'
     Plug 'jiangmiao/auto-pairs' 
@@ -106,54 +107,54 @@ syntax on
 " let g:taskwiki_markup_syntax = 'markdown'
 " let g:markdown_folding = 1
 
-lua << EOF
-  require("trouble").setup {
-    -- your configuration comes here
-    -- or leave it empty to use the default settings
-    -- refer to the configuration section below
-  }
-  require'nvim-treesitter.configs'.setup {
-      -- One of "all", "maintained" (parsers with maintainers), or a list of languages
-      ensure_installed = "all",
-
-      -- Install languages synchronously (only applied to `ensure_installed`)
-      sync_install = false,
-
-      -- List of parsers to ignore installing
-      ignore_install = { "javascript" },
-
-      highlight = {
-        -- `false` will disable the whole extension
-        enable = true,
-
-        -- list of language that will be disabled
-        disable = { "rust", "go" , "cmake"},
-
-        -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-        -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-        -- Using this option may slow down your editor, and you may see some duplicate highlights.
-        -- Instead of true it can also be a list of languages
-        additional_vim_regex_highlighting = false,
-        },
-   }
-   -- require"nvim-treesitter.highlight".set_custom_captures {
-        -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
-        -- ["field"] = "Identifier",
-   --     ["constructor"] = "TSFunction",
-   -- }
-   require('telescope').setup{
-      defaults = {
-        mappings = {
-          i = {
-            ["<C-n>"] = false,
-            ["<C-p>"] = false,
-            ["<C-j>"] = require("telescope.actions").move_selection_next,
-            ["<C-k>"] = require("telescope.actions").move_selection_previous,
-          },
-          n = {
-          },
-        },
-      }
-    }
-EOF
+" lua << EOF
+"   require("trouble").setup {
+"     -- your configuration comes here
+"     -- or leave it empty to use the default settings
+"     -- refer to the configuration section below
+"   }
+"   require'nvim-treesitter.configs'.setup {
+"       -- One of "all", "maintained" (parsers with maintainers), or a list of languages
+"       ensure_installed = "all",
+" 
+"       -- Install languages synchronously (only applied to `ensure_installed`)
+"       sync_install = false,
+" 
+"       -- List of parsers to ignore installing
+"       ignore_install = { "javascript" },
+" 
+"       highlight = {
+"         -- `false` will disable the whole extension
+"         enable = true,
+" 
+"         -- list of language that will be disabled
+"         disable = { "rust", "go" , "cmake"},
+" 
+"         -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+"         -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+"         -- Using this option may slow down your editor, and you may see some duplicate highlights.
+"         -- Instead of true it can also be a list of languages
+"         additional_vim_regex_highlighting = false,
+"         },
+"    }
+"    require"nvim-treesitter.highlight".set_custom_captures {
+"         -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
+"         -- ["field"] = "Identifier",
+"         ["constructor"] = "TSFunction",
+"    }
+"    require('telescope').setup{
+"       defaults = {
+"         mappings = {
+"           i = {
+"             ["<C-n>"] = false,
+"             ["<C-p>"] = false,
+"             ["<C-j>"] = require("telescope.actions").move_selection_next,
+"             ["<C-k>"] = require("telescope.actions").move_selection_previous,
+"           },
+"           n = {
+"           },
+"         },
+"       }
+"     }
+" EOF
 
