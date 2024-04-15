@@ -71,6 +71,8 @@ call plug#begin('~/.config/nvim/plugged')
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
+    Plug 'yorokobi/vim-splunk'
+    Plug 'lilyinstarlight/vim-spl'
 call plug#end()
 
 source $HOME/.config/nvim/general/settings.vim

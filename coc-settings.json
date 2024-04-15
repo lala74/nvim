@@ -17,6 +17,9 @@
       ]
     }
   },
-  "python.jediEnabled": false,
+  // "python.jediEnabled": false,
   "yaml.format.enable": true,
+  "pyright.inlayHints.functionReturnTypes": false,
+  "pyright.inlayHints.variableTypes": false,
+  "pyright.inlayHints.parameterTypes": false,
 }
